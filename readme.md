@@ -1,6 +1,7 @@
 
 # English
 ## Guide
+- install necessary librarys (termcolor,os,pygame,speech_recognition,pyaudio,wave)
 - Make the necessary settings from the settings.py file.
 - create and call your command in defs.py file.
 - start main.py
