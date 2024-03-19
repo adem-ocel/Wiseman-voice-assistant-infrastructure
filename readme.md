@@ -21,6 +21,7 @@ This infrastructure is a comprehensive solution that can be used to build a voic
 # Turkish
 
 ## Rehber
+- gerekli kütüphaneleri yükleyin (termcolor,os,pygame,speech_recognition,pyaudio,wave)
 - settings.py dosyasından gerekli ayarları yapın.
 - defs.py dosyasında komutunuzu oluşturun ve çağırın.
 - main.py dosyasını başlat
