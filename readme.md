@@ -1,0 +1,2 @@
+- Make the necessary settings from the settings.py file.
+- create and call your command in defs.py file.
