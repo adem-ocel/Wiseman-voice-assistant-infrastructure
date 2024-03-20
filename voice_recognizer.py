@@ -6,11 +6,11 @@ import settings
 
 tanima_motoru = sr.Recognizer()
 
-def recognize(voice):
+def recognize(voice,lang=settings.lang):
     with sr.AudioFile(voice) as kaynak:
         ses = tanima_motoru.record(kaynak)
         try:
-            text = tanima_motoru.recognize_google(ses, language=settings.lang) 
+            text = tanima_motoru.recognize_google(ses, language=lang) 
             print(colored(f"{settings.username}: {text}",settings.user_console_color))
             return text
         except sr.UnknownValueError:
