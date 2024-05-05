@@ -3,7 +3,7 @@
 ## Guide
 - install necessary librarys (termcolor,os,pygame,speech_recognition,pyaudio,wave)
 - Make the necessary settings from the settings.py file.
-- create and call your command in defs.py file.
+- Create your script with the required template in the commands folder
 - start main.py
 
 ## Features:
@@ -23,7 +23,7 @@ This infrastructure is a comprehensive solution that can be used to build a voic
 ## Rehber
 - gerekli kütüphaneleri yükleyin (termcolor,os,pygame,speech_recognition,pyaudio,wave)
 - settings.py dosyasından gerekli ayarları yapın.
-- defs.py dosyasında komutunuzu oluşturun ve çağırın.
+- commands klasörüne gerekli şablon ile komut dosyanızı oluşturun
 - main.py dosyasını başlat
 
 ## Özellikler:

@@ -1,23 +1,16 @@
 import speaker
 import voice_recognizer
-
+import speaker
+import os
+import glob
 def lissen():
     speaker.play_sound("voices/lissening.mp3")
     voice_recognizer.record(5,"voice.vaw")
+    
     command = voice_recognizer.recognize("voice.vaw").lower()
-    if command != "":
+    with open(os.path.dirname(__file__)+"/commands/command", "w") as commandfile:
+         commandfile.write(command)
 
-        #call your commands
-        if command == "hello":hello()
-        else:unkowncommand()
-
-
-
-#create commands in here.
-def hello():
-    speaker.speak("hello how can i help you")
-    lissen()
-
-def unkowncommand():
-    speaker.speak("I dont understand please repeat")
-    lissen()
+    command_files = glob.glob(os.path.join("commands", '*.py'))
+    for commandfile in command_files:
+        os.system('python {}'.format(commandfile))
